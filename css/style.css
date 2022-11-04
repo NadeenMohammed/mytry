@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+    font-family: 'Shalimar', cursive;
+}
+a {
+    color: aliceblue !important;
+    font-size:  2.5rem !important;
+    font-weight: 600 ;
+}
+nav{
+    z-index: 1000;
+    width: 95%;
+}
+nav ul li a {
+    border-radius: 20px;
+    padding: 0 5px !important;
+    margin: 6px 10px;
+    transition: all 2s;
+    
+}
+
+nav ul li a:hover , .active{
+    background-color: white;
+    color: #200016 !important;
+    transition: all 1s;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+#moon{
+    mix-blend-mode: screen;
+    /* transform: translateY(100px); */
+}
+ .main::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    background: linear-gradient(to top,#200016,transparent);
+} 
+.main h3{
+bottom: 50%;
+left: 48%;
+transform: translateY(-180px);
+}
